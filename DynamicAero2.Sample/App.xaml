@@ -1,0 +1,14 @@
+﻿<Application x:Class="DynamicAero2.Sample.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DynamicAero2.Sample"
+             xmlns:DynamicAero2="clr-namespace:DynamicAero2;assembly=DynamicAero2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <DynamicAero2:Theme Color="Light"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

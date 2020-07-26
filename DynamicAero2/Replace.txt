@@ -1,0 +1,3 @@
+(?<=(Brush|Background|Fill|Style|Stroke|Template|Data|Foreground)(="{|"\r?\n?\s*Value="{))StaticResource
+
+DynamicResource

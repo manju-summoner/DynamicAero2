@@ -1,0 +1,273 @@
+﻿<Window x:Class="DynamicAero2.Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DynamicAero2.Sample"
+        xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=WindowsBase"
+        mc:Ignorable="d"
+        Title="DynamicAero2 Sample" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="ChangeTheme" Click="MenuItem_Click" FontWeight="Bold"/>
+            <MenuItem Header="Menu">
+                <MenuItem Header="Item">
+                    <MenuItem Header="Item"/>
+                </MenuItem>
+                <MenuItem Header="Item" IsCheckable="True" IsChecked="True"/>
+                <MenuItem Header="Item" IsCheckable="True" IsChecked="True" IsEnabled="False"/>
+                <MenuItem Header="Item" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Header="Menu">
+                <MenuItem Header="Item">
+                    <MenuItem Header="Item"/>
+                </MenuItem>
+                <MenuItem Header="Item" IsCheckable="True" IsChecked="True"/>
+                <MenuItem Header="Item" IsEnabled="False"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray Grid.Row="1">
+            <ToolBar>
+                <TextBox Text="TextBox" Width="80"/>
+                <ComboBox Width="80" SelectedIndex="0">
+                    <ComboBoxItem>ComboBox</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                </ComboBox>
+                <Menu>
+                    <MenuItem Header="Menu">
+                        <MenuItem Header="Item">
+                            <MenuItem Header="Item"/>
+                            <MenuItem Header="Item"/>
+                        </MenuItem>
+                        <MenuItem Header="Item" IsEnabled="False"/>
+                        <MenuItem Header="Item" IsCheckable="True" IsChecked="True"/>
+                    </MenuItem>
+                </Menu>
+                <Separator/>
+                <Button Content="Button"/>
+                <Separator/>
+                <ToggleButton Content="ToggleButton"/>
+                <ToggleButton Content="ToggleButton"/>
+                <Separator/>
+                <RadioButton Content="RadioButton"/>
+                <RadioButton Content="RadioButton"/>
+                <Separator/>
+                <CheckBox Content="CheckBox"/>
+                <CheckBox Content="CheckBox"/>
+            </ToolBar>
+            <ToolBar>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+            </ToolBar>
+            <ToolBar Band="1" IsEnabled="False">
+                <TextBox Text="TextBox" Width="80"/>
+                <ComboBox Width="80" SelectedIndex="0">
+                    <ComboBoxItem>ComboBox</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                </ComboBox>
+                <Menu>
+                    <MenuItem Header="Menu">
+                        <MenuItem Header="Item">
+                            <MenuItem Header="Item"/>
+                            <MenuItem Header="Item"/>
+                        </MenuItem>
+                        <MenuItem Header="Item" IsEnabled="False"/>
+                        <MenuItem Header="Item" IsCheckable="True" IsChecked="True"/>
+                    </MenuItem>
+                </Menu>
+                <Separator/>
+                <Button Content="Button"/>
+                <Separator/>
+                <ToggleButton Content="ToggleButton"/>
+                <ToggleButton Content="ToggleButton"/>
+                <Separator/>
+                <RadioButton Content="RadioButton"/>
+                <RadioButton Content="RadioButton"/>
+                <Separator/>
+                <CheckBox Content="CheckBox"/>
+                <CheckBox Content="CheckBox"/>
+            </ToolBar>
+            <ToolBar Band="1" IsEnabled="False">
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+                <Button Content="Item"/>
+            </ToolBar>
+        </ToolBarTray>
+        <UniformGrid Grid.Row="2" Columns="4">
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Setter Property="Margin" Value="2"/>
+                    </Style>
+                    <Style TargetType="ToggleButton" BasedOn="{StaticResource {x:Type ToggleButton}}">
+                        <Setter Property="Margin" Value="2"/>
+                    </Style>
+                    <Style TargetType="RepeatButton" BasedOn="{StaticResource {x:Type RepeatButton}}">
+                        <Setter Property="Margin" Value="2"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button Content="Button"/>
+                <Button Content="Disabled Button" IsEnabled="False"/>
+                <ToggleButton Content="ToggleButton" IsChecked="True"/>
+                <RepeatButton Content="RepeatButton"/>
+            </StackPanel>
+            <StackPanel>
+                <Slider/>
+                <Slider IsEnabled="False"/>
+                <Slider TickPlacement="BottomRight"/>
+            </StackPanel>
+            <StackPanel>
+                <ComboBox SelectedIndex="0">
+                    <ComboBoxItem>ComboBox</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                </ComboBox>
+                <ComboBox IsEnabled="False" SelectedIndex="0">
+                    <ComboBoxItem>Disabled ComboBox</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                </ComboBox>
+                <ComboBox IsEditable="True" SelectedIndex="0">
+                    <ComboBoxItem>Editable ComboBox</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                </ComboBox>
+                <ComboBox IsEditable="True" IsEnabled="False" SelectedIndex="0">
+                    <ComboBoxItem>Disabled Editable ComboBox</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                    <ComboBoxItem>Item</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel>
+                <Separator/>
+                <Grid Background="Transparent">
+                    <Grid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="Item">
+                                <MenuItem Header="Item"/>
+                            </MenuItem>
+                            <MenuItem Header="Item" IsCheckable="True" IsChecked="True"/>
+                            <MenuItem Header="Item" IsEnabled="False"/>
+                        </ContextMenu>
+                    </Grid.ContextMenu>
+                    <TextBlock Text="ContextMenu&#10;Right click here." HorizontalAlignment="Center" TextAlignment="Center" Margin="6"/>
+                </Grid>
+                <Separator/>
+                <Grid Background="Transparent" ToolTip="ToolTip">
+                    <TextBlock Text="ToolTip&#10;Mouse over here." HorizontalAlignment="Center" TextAlignment="Center" Margin="6"/>
+                </Grid>
+                <Separator/>
+            </StackPanel>
+            <StackPanel>
+                <Expander Header="Expander" IsExpanded="True">
+                        <Label Content="Content"/>
+                    </Expander>
+                <Expander Header="Disabled Expander" IsExpanded="True" IsEnabled="False">
+                    <Label Content="Content"/>
+                </Expander>
+            </StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ListBox Grid.Row="0">
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                </ListBox>
+                <ListBox Grid.Row="1" IsEnabled="False">
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                    <ListBoxItem>Item</ListBoxItem>
+                </ListBox>
+            </Grid>
+            <StackPanel>
+                <TextBox Text="TextBox"/>
+                <TextBox Text="Disabled TextBox" IsEnabled="False"/>
+                <PasswordBox Password="PasswordBox"/>
+                <PasswordBox Password="Disabled PasswordBox" IsEnabled="False"/>
+            </StackPanel>
+            <TabControl>
+                <TabItem Header="TabItem">
+                    <Button Content="button" Width="100" Height="24"/>
+                </TabItem>
+                <TabItem Header="TabItem">
+
+                </TabItem>
+                <TabItem Header="Disabled TabItem" IsEnabled="False">
+
+                </TabItem>
+            </TabControl>
+            <DataGrid AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="Check"/>
+                    <DataGridTextColumn Header="Text"/>
+                    <DataGridComboBoxColumn Header="ComboBox"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <WrapPanel Orientation="Vertical">
+                <StackPanel>
+                    <CheckBox Content="CheckBox"/>
+                    <CheckBox Content="CheckBox" IsChecked="True"/>
+                    <CheckBox Content="CheckBox" IsChecked="{x:Null}"/>
+                    <CheckBox Content="CheckBox" IsChecked="True" IsEnabled="False"/>
+                </StackPanel>
+                <StackPanel>
+                    <RadioButton Content="RadioButton" IsChecked="True" GroupName="1"/>
+                    <RadioButton Content="RadioButton" IsChecked="{x:Null}" GroupName="2"/>
+                    <RadioButton Content="RadioButton" IsChecked="False" GroupName="3"/>
+                    <RadioButton Content="RadioButton" IsChecked="True" GroupName="4" IsEnabled="False"/>
+                </StackPanel>
+            </WrapPanel>
+            <StackPanel>
+                <ProgressBar Height="24" Value="30"/>
+                <ProgressBar Height="24" IsIndeterminate="True"/>
+            </StackPanel>
+            <GroupBox Header="GroupBox" Margin="6">
+                
+            </GroupBox>
+        </UniformGrid>
+        <StatusBar Grid.Row="3">
+            <StatusBarItem Content="Item"/>
+            <Separator/>
+            <StatusBarItem Content="Item"/>
+        </StatusBar>
+    </Grid>
+</Window>

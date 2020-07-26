@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="Color50">#fffafafa</Color>
+    <Color x:Key="Color100">#fff5f5f5</Color>
+    <Color x:Key="Color300">#ffe0e0e0</Color>
+    <Color x:Key="Color600">#ff757575</Color>
+    <Color x:Key="Color800">#ff424242</Color>
+    <Color x:Key="Color850">#ff303030</Color>
+    <Color x:Key="Color900">#ff212121</Color>
+
+    <Color x:Key="Color700">#ff616161</Color>
+    <Color x:Key="Color500">#ff9E9E9E</Color>
+    <Color x:Key="Color400">#ffBDBDBD</Color>
+    <Color x:Key="Color200">#ffEEEEEE</Color>
+
+    <Color x:Key="SelectionColor1">#ff3b5464</Color><!--2C7DB4-->
+    <Color x:Key="SelectionColor2">#ff36A2DB</Color>
+
+    <Color x:Key="ForegroundColor">#e5ffffff</Color>
+    <Color x:Key="ForegroundSecondaryColor">#b3ffffff</Color>
+    <Color x:Key="ForegroundDisabledColor">#50ffffff</Color>
+
+    <Color x:Key="GreenColor">#ff2E7D32</Color>
+    
+    <Color x:Key="ButtonColor">#ff5a595b</Color>
+</ResourceDictionary>
