@@ -1,11 +1,10 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<ResourceDictionary x:Class="DynamicAero2.Styles.ContextMenu"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
     <!--=================================================================
         ContextMenu
     ==================================================================-->
-
-
     <Style x:Key="{x:Type ContextMenu}"
            TargetType="{x:Type ContextMenu}">
         <Setter Property="Background"
@@ -102,5 +101,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>
