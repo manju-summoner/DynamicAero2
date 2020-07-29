@@ -57,9 +57,9 @@
     <SolidColorBrush x:Key="ToolBarButtonPressedBorder" Color="#90006CD9"/>
     <SolidColorBrush x:Key="ToolBarMenuBorder" Color="#FFB6BDC5"/>
     <SolidColorBrush x:Key="ToolBarSubMenuBackground" Color="#FFEEF5FD"/>
+    <!-- aero2 original ToolBarMenuCheckFill : #FF212121 -->
     <SolidColorBrush x:Key="ToolBarMenuCheckFill" Color="#E6F0FA"/>
     <SolidColorBrush x:Key="ToolBarOpenHeaderBackground" Color="#FFEEF5FD"/>
-    <!-- aero2 original ToolBarTrayBackground : #FF212121 -->
     <SolidColorBrush x:Key="ToolBarTrayBackground" Color="#FFEEF5FD"/>
     <SolidColorBrush x:Key="ToolBarHorizontalBackground" Color="#FFEEF5FD"/>
     <SolidColorBrush x:Key="ToolBarVerticalBackground" Color="#FFEEF5FD"/>
