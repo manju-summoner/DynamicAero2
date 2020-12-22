@@ -4,7 +4,7 @@ DynamicAero2 theme is DynamicResource version of PresentationFramework.Aero2.
 ## Differences from PresentationFramework.Aero2
  - All Brush, Style, Template and Data are specified by DynamicResource.
  - You can change the color of the control without implementing Style.
-```C#
+```xaml
 <Window.Resources>
     <SolidColorBrush x:Key="ScrollBar.Static.Background" Color="Red" />
 </Window.Resources>
@@ -14,6 +14,8 @@ DynamicAero2 theme is DynamicResource version of PresentationFramework.Aero2.
 ### NormalColor
 Equivalent to PresentationFramework.Aero2.
 ![NormalColor](docs/normalcolor.png)
+### Black
+![Dark](docs/black.png)
 ### Dark
 ![Dark](docs/dark.png)
 ### Light
@@ -21,7 +23,7 @@ Equivalent to PresentationFramework.Aero2.
 
 ## How to use
 After adding `DynamicAero2.dll` to project reference, edit `App.xaml` as follows.
-```C#
+```xaml
 <Application [...]
              xmlns:DynamicAero2="clr-namespace:DynamicAero2;assembly=DynamicAero2">
     <Application.Resources>

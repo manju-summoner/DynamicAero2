@@ -3,6 +3,7 @@
     public enum ThemeColor
     {
         NormalColor,
+        Black,
         Dark,
         Light,
     }

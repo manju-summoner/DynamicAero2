@@ -263,6 +263,23 @@
             <GroupBox Header="GroupBox" Margin="6">
                 
             </GroupBox>
+            <TreeView>
+                <TreeViewItem Header="TreeViewItem1">
+                    <TreeViewItem Header="Item1"/>
+                    <TreeViewItem Header="Item2"/>
+                    <TreeViewItem Header="Item3"/>
+                </TreeViewItem>
+                <TreeViewItem Header="TreeViewItem2">
+                    <TreeViewItem Header="Item1"/>
+                    <TreeViewItem Header="Item2"/>
+                    <TreeViewItem Header="Item3"/>
+                </TreeViewItem>
+                <TreeViewItem Header="TreeViewItem3">
+                    <TreeViewItem Header="Item1"/>
+                    <TreeViewItem Header="Item2"/>
+                    <TreeViewItem Header="Item3"/>
+                </TreeViewItem>
+            </TreeView>
         </UniformGrid>
         <StatusBar Grid.Row="3">
             <StatusBarItem Content="Item"/>

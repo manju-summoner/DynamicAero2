@@ -6,6 +6,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Page Update="Brushes\Black.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Brushes\Light.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Brushes\Material\BlackColors.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Brushes\Material\LightColors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Brushes\Light.xaml">
       <SubType>Designer</SubType>
     </Page>

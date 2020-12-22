@@ -19,7 +19,8 @@ namespace DynamicAero2.Sample
 
             theme.Color = theme.Color switch
             {
-                ThemeColor.NormalColor => ThemeColor.Dark,
+                ThemeColor.NormalColor => ThemeColor.Black,
+                ThemeColor.Black => ThemeColor.Dark,
                 ThemeColor.Dark => ThemeColor.Light,
                 _ => ThemeColor.NormalColor
             };
