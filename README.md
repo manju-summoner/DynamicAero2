@@ -21,6 +21,9 @@ Equivalent to PresentationFramework.Aero2.
 ### Light
 ![Light](docs/light.png)
 
+## Download
+[Download Nuget Package](https://www.nuget.org/packages/DynamicAero2/)
+
 ## How to use
 After adding `DynamicAero2.dll` to project reference, edit `App.xaml` as follows.
 ```xaml

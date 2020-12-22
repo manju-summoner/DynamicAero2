@@ -3,6 +3,17 @@
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>True</UseWPF>
+
+    <Authors>ManjuSummoner</Authors>
+    <Product>DynamicAero2</Product>
+    <Description>DynamicResource version of PresentationFramework.Aero2 for .NET Core WPF Application.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/manju-summoner/DynamicAero2</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/manju-summoner/DynamicAero2</RepositoryUrl>
+    <Copyright>Copyright (c) 2020- ManjuSummoner</Copyright>
+    <PackageTags>WPF XAML Theme UI Dark Light</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
