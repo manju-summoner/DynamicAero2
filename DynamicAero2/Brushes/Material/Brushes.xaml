@@ -196,6 +196,7 @@
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="{DynamicResource Color700}" />
     <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="{DynamicResource Color600}" />
     <SolidColorBrush x:Key="TextBox.Focus.Border" Color="{DynamicResource Color600}" />
+    <SolidColorBrush x:Key="TextBox.Static.Caret" Color="{DynamicResource ForegroundColor}" />
 
     <!-- ToolTip -->
     <SolidColorBrush x:Key="ToolTip.Background" Color="{DynamicResource Color800}" />
