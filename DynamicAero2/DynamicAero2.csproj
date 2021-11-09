@@ -13,7 +13,7 @@
     <Copyright>Copyright (c) 2020- ManjuSummoner</Copyright>
     <PackageTags>WPF XAML Theme UI Dark Light</PackageTags>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
