@@ -40,6 +40,28 @@ After adding `DynamicAero2.dll` to project reference, edit `App.xaml` as follows
 ```
 Change the `Color` property to `Dark` or `Light` if necessary.
 
+### Theme with style
+The theme will not be applied to controls that have Style applied to them.  
+If you want to use both Style and Theme, you need to set `BasedOn="{StaticResource {x:type Button}}"` to Style.
+
+#### Incorrect code
+```xaml
+<Button>
+  <Button.Style>
+    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}"}/>
+  </Button.Style>
+</Button
+```
+
+#### Corrent code
+```xaml
+<Button>
+  <Button.Style>
+    <Style TargetType="Button"/>
+  </Button.Style>
+</Button
+```
+
 ## License
 MIT license.
 
