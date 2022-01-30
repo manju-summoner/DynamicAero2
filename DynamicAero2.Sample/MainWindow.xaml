@@ -7,7 +7,7 @@
         xmlns:sys="clr-namespace:System;assembly=System.Runtime"
         xmlns:input="clr-namespace:System.Windows.Input;assembly=WindowsBase"
         mc:Ignorable="d"
-        Title="DynamicAero2 Sample" Height="450" Width="800">
+        Title="DynamicAero2 Sample" Height="600" Width="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -280,6 +280,21 @@
                     <TreeViewItem Header="Item3"/>
                 </TreeViewItem>
             </TreeView>
+            <StackPanel>
+                <Button Content="Correct styled button">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}"/>
+                    </Button.Style>
+                </Button>
+                <Button Content="Incorrect styled button">
+                    <Button.Style>
+                        <Style TargetType="Button"/>
+                    </Button.Style>
+                </Button>
+                <TextBlock TextWrapping="Wrap">
+                    If you want to apply style to controls, you need to set <Bold>BasedOn="{StaticResource {x:Type Button}"</Bold> to style.
+                </TextBlock>
+            </StackPanel>
         </UniformGrid>
         <StatusBar Grid.Row="3">
             <StatusBarItem Content="Item"/>
