@@ -44,16 +44,16 @@ Change the `Color` property to `Dark` or `Light` if necessary.
 The theme will not be applied to controls that have Style applied to them.  
 If you want to use both Style and Theme, you need to set `BasedOn="{StaticResource {x:type Button}}"` to Style.
 
-#### Incorrect code
+#### Correct code
 ```xaml
 <Button>
   <Button.Style>
     <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}"}/>
   </Button.Style>
-</Button
+</Button>
 ```
 
-#### Corrent code
+#### Incorrect code
 ```xaml
 <Button>
   <Button.Style>
