@@ -235,11 +235,22 @@
 
                 </TabItem>
             </TabControl>
-            <DataGrid AutoGenerateColumns="False">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{x:Static local:DataGridItem.Source}">
                 <DataGrid.Columns>
-                    <DataGridCheckBoxColumn Header="Check"/>
-                    <DataGridTextColumn Header="Text"/>
-                    <DataGridComboBoxColumn Header="ComboBox"/>
+                    <DataGridCheckBoxColumn Header="Check" Binding="{Binding Check}">
+                        <DataGridCheckBoxColumn.ElementStyle>
+                            <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}"/>
+                        </DataGridCheckBoxColumn.ElementStyle>
+                        <DataGridCheckBoxColumn.EditingElementStyle>
+                            <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}"/>
+                        </DataGridCheckBoxColumn.EditingElementStyle>
+                    </DataGridCheckBoxColumn>
+                    <DataGridTextColumn Header="Text" Binding="{Binding Text}"/>
+                    <DataGridComboBoxColumn Header="ComboBox" SelectedValueBinding="{Binding ComboBox,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" ItemsSource="{x:Static local:DataGridItem.KeySource}">
+                        <DataGridComboBoxColumn.EditingElementStyle>
+                            <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}"/>
+                        </DataGridComboBoxColumn.EditingElementStyle>
+                    </DataGridComboBoxColumn>
                 </DataGrid.Columns>
             </DataGrid>
             <WrapPanel Orientation="Vertical">
