@@ -376,4 +376,5 @@ See the LICENSE file in the project root for more information.
             </Setter.Value>
         </Setter>
     </Style>
+    <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource {x:Static GridView.GridViewStyleKey}}"/>
 </ResourceDictionary>
