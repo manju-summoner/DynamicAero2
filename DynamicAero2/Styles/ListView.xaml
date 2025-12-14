@@ -329,7 +329,7 @@ See the LICENSE file in the project root for more information.
         <Setter Property="BorderThickness"
                 Value="1"/>
         <Setter Property="Foreground"
-                Value="#FF042271"/>
+                Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility"
                 Value="Auto"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility"
