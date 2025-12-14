@@ -253,7 +253,21 @@
                     </DataGridComboBoxColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <WrapPanel Orientation="Vertical">
+            <ListView>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Column1" Width="100" DisplayMemberBinding="{Binding}"/>
+                        <GridViewColumn Header="Column2" Width="100" DisplayMemberBinding="{Binding}"/>
+                        <GridViewColumn Header="Column3" Width="100" DisplayMemberBinding="{Binding}"/>
+                    </GridView>
+                </ListView.View>
+                <ListViewItem>Item1</ListViewItem>
+                <ListViewItem>Item2</ListViewItem>
+                <ListViewItem>Item3</ListViewItem>
+                <ListViewItem>Item4</ListViewItem>
+                <ListViewItem>Item5</ListViewItem>
+            </ListView>
+                <WrapPanel Orientation="Vertical">
                 <StackPanel>
                     <CheckBox Content="CheckBox"/>
                     <CheckBox Content="CheckBox" IsChecked="True"/>

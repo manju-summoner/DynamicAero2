@@ -18,6 +18,8 @@
         <ResourceDictionary Source="Styles/ComboBoxItem.xaml"/>
         <ResourceDictionary Source="Styles/ListBox.xaml"/>
         <ResourceDictionary Source="Styles/ListBoxItem.xaml"/>
+        <ResourceDictionary Source="Styles/ListView.xaml"/>
+        <ResourceDictionary Source="Styles/ListViewItem.xaml"/>
         <ResourceDictionary Source="Styles/TextBox.xaml"/>
         
         <ResourceDictionary Source="Styles/ToolTip.xaml"/>
