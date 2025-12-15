@@ -32,6 +32,9 @@ See the LICENSE file in the project root for more information.
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <!-- Grid.Column="0" Grid.Row="0" -->
+                        <Grid Height="{Binding ElementName=RowPresenter,Path=ActualHeight}" 
+                              Background="{DynamicResource GridView.ColumnHeader.Static.Background}" 
+                              VerticalAlignment="Top"/>
                         <DockPanel Margin="{TemplateBinding Padding}">
                             <!-- Column Headers Scroll Viewer -->
                             <ScrollViewer DockPanel.Dock="Top"
@@ -39,7 +42,8 @@ See the LICENSE file in the project root for more information.
                                           VerticalScrollBarVisibility="Hidden"
                                           Focusable="false">
                                 <!-- Set a Margin here because ListViewItem has a 2-width border around. Otherwise the horizontal scrolling of header bar and item will not keep the same pace -->
-                                <GridViewHeaderRowPresenter Margin="2,0,2,0"
+                                <GridViewHeaderRowPresenter x:Name="RowPresenter"
+                                                            Margin="2,0,2,0"
                                                             Columns="{Binding Path=TemplatedParent.View.Columns,RelativeSource={RelativeSource TemplatedParent}}"
                                                             ColumnHeaderContainerStyle="{Binding Path=TemplatedParent.View.ColumnHeaderContainerStyle,RelativeSource={RelativeSource TemplatedParent}}"
                                                             ColumnHeaderTemplate="{Binding Path=TemplatedParent.View.ColumnHeaderTemplate,RelativeSource={RelativeSource TemplatedParent}}"
