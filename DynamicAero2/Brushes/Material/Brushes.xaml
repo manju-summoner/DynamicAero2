@@ -195,7 +195,12 @@
     <SolidColorBrush x:Key="GridView.ColumnHeader.Static.BorderBackground" Color="{DynamicResource Color700}"/>
     <SolidColorBrush x:Key="GridView.ColumnHeader.Static.Background" Color="{DynamicResource Color800}"/>
     <SolidColorBrush x:Key="GridView.ColumnHeader.MouseOver.Background"  Color="{DynamicResource Color700}"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.MouseOver.HoverBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.MouseOver.UpperHighlight" Color="Transparent"/>
     <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.Background" Color="{DynamicResource Color600}"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.HoverBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.UpperHighlight" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.PressBorder" Color="Transparent"/>
 
     <!-- ListViewItem -->
     

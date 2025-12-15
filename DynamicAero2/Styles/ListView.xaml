@@ -155,8 +155,7 @@ See the LICENSE file in the project root for more information.
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
                                 <Rectangle Name="UpperHighlight"
-                                           Visibility="Collapsed"
-                                           Fill="#FFE3F7FF"/>
+                                           Visibility="Collapsed"/>
                                 <Border Grid.RowSpan="2"
                                         Padding="{TemplateBinding Padding}">
                                     <ContentPresenter Name="HeaderContent"
@@ -187,10 +186,13 @@ See the LICENSE file in the project root for more information.
                                     Value="{DynamicResource GridView.ColumnHeader.MouseOver.Background}"/>
                             <Setter TargetName="HeaderHoverBorder"
                                     Property="BorderBrush"
-                                    Value="#FF88CBEB"/>
+                                    Value="{DynamicResource GridView.ColumnHeader.MouseOver.HoverBorder}"/>
                             <Setter TargetName="UpperHighlight"
                                     Property="Visibility"
                                     Value="Visible"/>
+                            <Setter TargetName="UpperHighlight"
+                                    Property="Fill"
+                                    Value="{DynamicResource GridView.ColumnHeader.MouseOver.UpperHighlight}"/>
                             <Setter TargetName="PART_HeaderGripper"
                                     Property="Background"
                                     Value="Transparent"/>
@@ -202,16 +204,16 @@ See the LICENSE file in the project root for more information.
                                     Value="{DynamicResource GridView.ColumnHeader.Pressed.Background}"/>
                             <Setter TargetName="HeaderHoverBorder"
                                     Property="BorderBrush"
-                                    Value="#FF95DAF9"/>
+                                    Value="{DynamicResource GridView.ColumnHeader.Pressed.HoverBorder}"/>
                             <Setter TargetName="HeaderPressBorder"
                                     Property="BorderBrush"
-                                    Value="#FF7A9EB1"/>
+                                    Value="{DynamicResource GridView.ColumnHeader.Pressed.PressBorder}"/>
                             <Setter TargetName="UpperHighlight"
                                     Property="Visibility"
                                     Value="Visible"/>
                             <Setter TargetName="UpperHighlight"
                                     Property="Fill"
-                                    Value="#FFBCE4F9"/>
+                                    Value="{DynamicResource GridView.ColumnHeader.Pressed.UpperHighlight}"/>
                             <Setter TargetName="PART_HeaderGripper"
                                     Property="Visibility"
                                     Value="Hidden"/>
