@@ -48,7 +48,7 @@ See the LICENSE file in the project root for more information.
                     <Border BorderThickness="{TemplateBinding BorderThickness}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             Background="{TemplateBinding Background}"
-                            CornerRadius="2"
+                            CornerRadius="0"
                             SnapsToDevicePixels="true">
                         <Border Name="InnerBorder"
                                 CornerRadius="1"
