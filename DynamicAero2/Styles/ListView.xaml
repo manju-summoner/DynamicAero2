@@ -306,8 +306,8 @@ See the LICENSE file in the project root for more information.
                                          BorderThickness="{TemplateBinding BorderThickness}"
                                          BorderBrush="{TemplateBinding BorderBrush}"
                                          Background="{TemplateBinding Background}"
-                                         RenderMouseOver="{TemplateBinding IsMouseOver}"
-                                         RenderFocused="{TemplateBinding IsKeyboardFocusWithin}"
+                                         RenderMouseOver="False"
+                                         RenderFocused="False"
                                          SnapsToDevicePixels="true">
                         <ScrollViewer Style="{DynamicResource {x:Static GridView.GridViewScrollViewerStyleKey}}"
                                       Padding="{TemplateBinding Padding}">
