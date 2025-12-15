@@ -239,10 +239,58 @@
     <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.HoverBorder" Color="#FF95DAF9"/>
     <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.UpperHighlight" Color="#FFBCE4F9"/>
     <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.PressBorder" Color="#FF7A9EB1"/>
-    
+
     <!-- ListViewItem -->
-    
-    
+    <LinearGradientBrush x:Key="ListItem.MouseOver.Background"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFF1FBFF"
+                          Offset="0"/>
+            <GradientStop Color="#FFD5F1FE"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ListItem.MouseOver.Border" Color="#FFCCF0FF"/>
+    <SolidColorBrush x:Key="ListItem.MouseOver.UpperHighlight" Color="#75FFFFFF"/>
+    <LinearGradientBrush x:Key="ListItem.Selected.Static.Background"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFD9F4FF"
+                          Offset="0"/>
+            <GradientStop Color="#FF9BDDFB"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ListItem.Selected.Static.Border" Color="#FF98DDFB"/>
+    <SolidColorBrush x:Key="ListItem.Selected.Static.InnerBorder" Color="#80FFFFFF"/>
+    <SolidColorBrush x:Key="ListItem.Selected.Static.UpperHighlight" Color="#40FFFFFF"/>
+    <LinearGradientBrush x:Key="ListItem.Selected.MouseOver.Background"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFEAF9FF"
+                          Offset="0"/>
+            <GradientStop Color="#FFC9EDFD"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ListItem.Selected.MouseOver.Border" Color="#FF98DDFB"/>
+    <LinearGradientBrush x:Key="ListItem.Selected.Inactive.Background"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFEEEDED"
+                          Offset="0"/>
+            <GradientStop Color="#FFDDDDDD"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ListItem.Selected.Inactive.Border" Color="#FFCFCFCF"/>
+
+
+
     <!-- TextBox -->
     <SolidColorBrush x:Key="TextBox.Static.Background" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3" />

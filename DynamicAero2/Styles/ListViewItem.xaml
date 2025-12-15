@@ -22,47 +22,6 @@ See the LICENSE file in the project root for more information.
         </Setter>
     </Style>
 
-    <LinearGradientBrush x:Key="ListItemHoverFill"
-                         StartPoint="0,0"
-                         EndPoint="0,1">
-        <LinearGradientBrush.GradientStops>
-            <GradientStop Color="#FFF1FBFF"
-                          Offset="0"/>
-            <GradientStop Color="#FFD5F1FE"
-                          Offset="1"/>
-        </LinearGradientBrush.GradientStops>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="ListItemSelectedFill"
-                         StartPoint="0,0"
-                         EndPoint="0,1">
-        <LinearGradientBrush.GradientStops>
-            <GradientStop Color="#FFD9F4FF"
-                          Offset="0"/>
-            <GradientStop Color="#FF9BDDFB"
-                          Offset="1"/>
-        </LinearGradientBrush.GradientStops>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="ListItemSelectedHoverFill"
-                         StartPoint="0,0"
-                         EndPoint="0,1">
-        <LinearGradientBrush.GradientStops>
-            <GradientStop Color="#FFEAF9FF"
-                          Offset="0"/>
-            <GradientStop Color="#FFC9EDFD"
-                          Offset="1"/>
-        </LinearGradientBrush.GradientStops>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="ListItemSelectedInactiveFill"
-                         StartPoint="0,0"
-                         EndPoint="0,1">
-        <LinearGradientBrush.GradientStops>
-            <GradientStop Color="#FFEEEDED"
-                          Offset="0"/>
-            <GradientStop Color="#FFDDDDDD"
-                          Offset="1"/>
-        </LinearGradientBrush.GradientStops>
-    </LinearGradientBrush>
-
     <!--=================================================================
         ListViewItem
     ==================================================================-->
@@ -100,8 +59,7 @@ See the LICENSE file in the project root for more information.
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
                                 <Rectangle Name="UpperHighlight"
-                                           Visibility="Collapsed"
-                                           Fill="#75FFFFFF"/>
+                                           Visibility="Collapsed"/>
                                 <!--remove the HorizontalAlignment due to HeaderRowPresenter does not have the ability to align to center or right-->
                                 <GridViewRowPresenter Grid.RowSpan="2"
                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -113,28 +71,31 @@ See the LICENSE file in the project root for more information.
                         <Trigger Property="IsMouseOver"
                                  Value="true">
                             <Setter Property="Background"
-                                    Value="{DynamicResource ListItemHoverFill}"/>
+                                    Value="{DynamicResource ListItem.MouseOver.Background}"/>
                             <Setter Property="BorderBrush"
-                                    Value="#FFCCF0FF"/>
-                            <Setter TargetName="UpperHighlight"
-                                    Property="Visibility"
-                                    Value="Visible"/>
-                        </Trigger>
-                        <Trigger Property="IsSelected"
-                                 Value="true">
-                            <Setter Property="Background"
-                                    Value="{DynamicResource ListItemSelectedFill}"/>
-                            <Setter Property="BorderBrush"
-                                    Value="#FF98DDFB"/>
-                            <Setter TargetName="InnerBorder"
-                                    Property="BorderBrush"
-                                    Value="#80FFFFFF"/>
+                                    Value="{DynamicResource ListItem.MouseOver.Border}"/>
                             <Setter TargetName="UpperHighlight"
                                     Property="Visibility"
                                     Value="Visible"/>
                             <Setter TargetName="UpperHighlight"
                                     Property="Fill"
-                                    Value="#40FFFFFF"/>
+                                    Value="{DynamicResource ListItem.MouseOver.UpperHighlight}"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected"
+                                 Value="true">
+                            <Setter Property="Background"
+                                    Value="{DynamicResource ListItem.Selected.Static.Background}"/>
+                            <Setter Property="BorderBrush"
+                                    Value="{DynamicResource ListItem.Selected.Static.Border}"/>
+                            <Setter TargetName="InnerBorder"
+                                    Property="BorderBrush"
+                                    Value="{DynamicResource ListItem.Selected.Static.InnerBorder}"/>
+                            <Setter TargetName="UpperHighlight"
+                                    Property="Visibility"
+                                    Value="Visible"/>
+                            <Setter TargetName="UpperHighlight"
+                                    Property="Fill"
+                                    Value="{DynamicResource ListItem.Selected.Static.UpperHighlight}"/>
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
@@ -144,9 +105,9 @@ See the LICENSE file in the project root for more information.
                                            Value="false"/>
                             </MultiTrigger.Conditions>
                             <Setter Property="Background"
-                                    Value="{DynamicResource ListItemSelectedInactiveFill}"/>
+                                    Value="{DynamicResource ListItem.Selected.Inactive.Background}"/>
                             <Setter Property="BorderBrush"
-                                    Value="#FFCFCFCF"/>
+                                    Value="{DynamicResource ListItem.Selected.Inactive.Border}"/>
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
@@ -156,9 +117,9 @@ See the LICENSE file in the project root for more information.
                                            Value="true"/>
                             </MultiTrigger.Conditions>
                             <Setter Property="Background"
-                                    Value="{DynamicResource ListItemSelectedHoverFill}"/>
+                                    Value="{DynamicResource ListItem.Selected.MouseOver.Background}"/>
                             <Setter Property="BorderBrush"
-                                    Value="#FF98DDFB"/>
+                                    Value="{DynamicResource ListItem.Selected.MouseOver.Border}"/>
                         </MultiTrigger>
                         <Trigger Property="IsEnabled"
                                  Value="false">
