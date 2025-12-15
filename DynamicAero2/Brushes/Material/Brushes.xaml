@@ -191,6 +191,15 @@
     <SolidColorBrush x:Key="Item.SelectedInactive.Background" Color="#3DDADADA" />
     <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="#FFDADADA" />
 
+    <!-- ListView -->
+    <SolidColorBrush x:Key="GridView.ColumnHeader.Static.BorderBackground" Color="{DynamicResource Color700}"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.Static.Background" Color="{DynamicResource Color800}"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.MouseOver.Background"  Color="{DynamicResource Color700}"/>
+    <SolidColorBrush x:Key="GridView.ColumnHeader.Pressed.Background" Color="{DynamicResource Color600}"/>
+
+    <!-- ListViewItem -->
+    
+    
     <!-- TextBox -->
     <SolidColorBrush x:Key="TextBox.Static.Background" Color="{DynamicResource Color850}" />
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="{DynamicResource Color700}" />

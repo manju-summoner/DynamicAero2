@@ -191,6 +191,53 @@
     <SolidColorBrush x:Key="Item.SelectedInactive.Background" Color="#3DDADADA" />
     <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="#FFDADADA" />
 
+    <!-- ListView -->
+    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderBorderBackground"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFF2F2F2"
+                          Offset="0"/>
+            <GradientStop Color="#FFD5D5D5"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderBackground"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFFFFFFF"
+                          Offset="0"/>
+            <GradientStop Color="#FFFFFFFF"
+                          Offset="0.4091"/>
+            <GradientStop Color="#FFF7F8F9"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderHoverBackground"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFBDEDFF"
+                          Offset="0"/>
+            <GradientStop Color="#FFB7E7FB"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderPressBackground"
+                         StartPoint="0,0"
+                         EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FF8DD6F7"
+                          Offset="0"/>
+            <GradientStop Color="#FF8AD1F5"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    
+    <!-- ListViewItem -->
+    
+    
     <!-- TextBox -->
     <SolidColorBrush x:Key="TextBox.Static.Background" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3" />
