@@ -192,7 +192,7 @@
     <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="#FFDADADA" />
 
     <!-- ListView -->
-    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderBorderBackground"
+    <LinearGradientBrush x:Key="GridView.ColumnHeader.Static.BorderBackground"
                          StartPoint="0,0"
                          EndPoint="0,1">
         <LinearGradientBrush.GradientStops>
@@ -202,7 +202,7 @@
                           Offset="1"/>
         </LinearGradientBrush.GradientStops>
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderBackground"
+    <LinearGradientBrush x:Key="GridView.ColumnHeader.Static.Background"
                          StartPoint="0,0"
                          EndPoint="0,1">
         <LinearGradientBrush.GradientStops>
@@ -214,7 +214,7 @@
                           Offset="1"/>
         </LinearGradientBrush.GradientStops>
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderHoverBackground"
+    <LinearGradientBrush x:Key="GridView.ColumnHeader.MouseOver.Background"
                          StartPoint="0,0"
                          EndPoint="0,1">
         <LinearGradientBrush.GradientStops>
@@ -224,7 +224,7 @@
                           Offset="1"/>
         </LinearGradientBrush.GradientStops>
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="ListView.GridViewColumnHeaderPressBackground"
+    <LinearGradientBrush x:Key="GridView.ColumnHeader.Pressed.Background"
                          StartPoint="0,0"
                          EndPoint="0,1">
         <LinearGradientBrush.GradientStops>
