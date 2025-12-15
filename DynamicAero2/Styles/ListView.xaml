@@ -85,11 +85,11 @@ See the LICENSE file in the project root for more information.
                                    LastChildFill="false">
                             <Rectangle DockPanel.Dock="Left"
                                        Width="1"
-                                       Fill="White"
+                                       Fill="{Binding Path=Background,ElementName=PART_VerticalScrollBar}"
                                        Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"/>
                             <Rectangle DockPanel.Dock="Top"
                                        Height="1"
-                                       Fill="White"
+                                       Fill="{Binding Path=Background,ElementName=PART_VerticalScrollBar}"
                                        Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"/>
                         </DockPanel>
                     </Grid>
