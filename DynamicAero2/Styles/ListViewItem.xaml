@@ -170,4 +170,5 @@ See the LICENSE file in the project root for more information.
             </Setter.Value>
         </Setter>
     </Style>
+    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource {x:Static GridView.GridViewItemContainerStyleKey}}"/>
 </ResourceDictionary>
